@@ -25,3 +25,9 @@ This repository contains supporting material for the Amazon SageMaker [tutorial]
    1. ```echo '{"kernel_python_credentials" : {"url": "http://<emr-master-private-ip>:8998/"}, "session_configs": {"executorMemory": "2g","executorCores": 2,"numExecutors":4}}' > ~/.sparkmagic/config.json```
    1. ```curl <emr-master-private-ip>:8998/sessions```
    1. ```git clone https://github.com/djarpin/strata-sagemaker-spark.git```
+
+
+## Contents
+
+- [XGBoost with EMR](xgboost/pyspark_mnist_xgboost.ipynb) - A light modification of the existing XGBoost example notebook to run in an external EMR cluster.
+- [BYO](byo/pyspark_mnist_custom_estimator.ipynb) - A modification of the existing custom estimator example notebook to train using a convolutional neural network in a bring your own PyTorch container.
